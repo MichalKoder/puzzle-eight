@@ -1,0 +1,88 @@
+.board {
+    width: 612px;
+    height: 612px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid orangered;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: rgb(255, 165, 0);
+    position: absolute;
+    cursor: pointer;
+}
+
+.overlay {
+    width: 632px;
+    height: 532px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px;
+    border-radius: 0px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    /* opacity: 40%; */
+    display: none;
+    color: white;
+    display: none;
+}
+
+.overtext {
+    width: 200px;
+    height: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto auto auto auto;
+    text-align: center;
+    
+}
+.overtext button#button1 {
+    margin-right: 50px;
+    background-color: limegreen;
+    width: 60px;
+    height: 50px;
+}
+.overtext button#button2 {
+    background-color: salmon;
+    width: 60px;
+    height: 50px;
+}
+
+#score {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+div.square {
+    height: 200px;
+    width: 200px;
+    border: 2px solid orange;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+article {
+    height: 632px;
+    position: relative;
+    border: 1px solid black;
+}
+
+header {
+    height: 80px;
+    background-color: gray;
+    text-align: center;
+}
+

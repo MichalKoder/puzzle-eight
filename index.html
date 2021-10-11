@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MichalKoder's Puzzle Game - Eight</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body onload="puzzle.shuffle()">
+    <header>
+        <h1>Puzzle Game - Eight</h1>
+        <button onclick="puzzle.shuffle();">Shuffle</button>
+    </header>
+    <article>  
+    <div class="board">
+    <div class="square" id="n0"></div>
+    <div class="square" id="n1"></div>
+    <div class="square" id="n2"></div>
+    <div class="square" id="n3"></div>
+    <div class="square" id="n4"></div>
+    <div class="square" id="n5"></div>
+    <div class="square" id="n6"></div>
+    <div class="square" id="n7"></div>
+    <div class="square" id="n8"></div>
+    </div>
+    <div class="board overlay">
+        <div class="overtext">
+        <h1>Well Done! Puzzle solved in <span id="score">0</span> slides.</h1>
+        <h3>Play again?</h3>
+        <button id="button1" onclick="puzzle.shuffle();document.getElementsByClassName('overlay')[0].style.display = 'none';">Yes</button>
+        <button id="button2" onclick="alert('Do widzenia!!!');">No</button>
+        </div>
+
+    </div>
+    </article>
+
+    <script src="puzzle-eight.js"></script>
+
+
+</body>
+</html>
