@@ -9,7 +9,7 @@
 </head>
 <body onload="puzzle.shuffle()">
     <header>
-        <h1>Puzzle Game - Eight</h1>
+        <h1>Puzzle Game -- Eight</h1>
         <button onclick="puzzle.shuffle();">Shuffle</button>
     </header>
     <article>  
@@ -26,10 +26,10 @@
     </div>
     <div class="board overlay">
         <div class="overtext">
-        <h1>Well Done! Puzzle solved in <span id="score">0</span> slides.</h1>
+        <h1>Well Done! Puzzle solved in <span id="score">0</span> moves.</h1>
         <h3>Play again?</h3>
         <button id="button1" onclick="puzzle.shuffle();document.getElementsByClassName('overlay')[0].style.display = 'none';">Yes</button>
-        <button id="button2" onclick="alert('Do widzenia!!!');">No</button>
+        <button id="button2" onclick="alert('Good bye!!!');window.location.href='/';">No</button>
         </div>
 
     </div>
