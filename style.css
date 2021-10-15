@@ -12,7 +12,13 @@
     grid-template-rows: repeat(3, 1fr);
     background-color: rgb(255, 165, 0);
     position: absolute;
-    cursor: pointer;
+    /* cursor: pointer; */
+}
+
+#n0 {
+    border-radius: 5px;
+    height: 200px;
+    width: 200px;
 }
 
 .overlay {
@@ -72,6 +78,10 @@ div.square {
     border-radius: 10px;
     font-size: 30px;
     font-weight: bold;
+}
+
+div.square:not(#n0) {
+    cursor: pointer;
 }
 
 article {
