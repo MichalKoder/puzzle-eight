@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MichalKoder's Puzzle Game - Eight</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 </head>
-<body onload="puzzle.shuffle()">
+<body onload="puzzle.initPictures();puzzle.shuffle()">
     <header>
         <h1>Puzzle "Eight"</h1>
         <button onclick="puzzle.shuffle();">Shuffle</button>
@@ -35,7 +38,30 @@
     </div>
     </article>
 
-    <script src="puzzle-eight.js"></script>
+    <script src="puzzle-eight.js">
+
+        
+    </script>
+    <script>
+$(document).ready(function() {
+    $(".square").not(".hole").draggable({
+            // axis : "x",
+            containment: "parent",
+            cursor: "grabbing",
+            snap: true,
+            revert: 'invalid',
+            // snapTolerance: 100
+
+
+    });
+    // $(".hole").droppable({
+
+    // });
+   
+})
+
+
+    </script>
 
 
 </body>
